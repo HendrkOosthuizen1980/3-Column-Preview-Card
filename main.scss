@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+h1,
+p {
+  padding-left: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+button {
+  margin-left: 3rem;
+}
+
+.card__sedan,
+.card__suv,
+.card__luxury {
+  height: 27rem;
+  width: 100%;
+}
+
+.card__sedan {
+  background-color: #e28625;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.card__suv {
+  background-color: #006971;
+}
+.card__luxury {
+  background-color: #004140;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.card-img {
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+.learn-btn-sedan,
+.learn-btn-suv,
+.learn-btn-luxury {
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  border-radius: 5rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-family: Arial;
+  width: 9rem;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0;
+  background-color: #f2f2f2;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+.learn-btn-sedan {
+  color: #e28625;
+}
+.learn-btn-suv {
+  color: #006971;
+}
+.learn-btn-luxury {
+  color: #004140;
+}
+
+.learn-btn-sedan:hover,
+.learn-btn-suv:hover,
+.learn-btn-luxury:hover {
+  color: #f2f2f2;
+  border: solid #f2f2f2 0.06rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  border-radius: 5rem;
+  text-decoration: none;
+}
+.learn-btn-sedan:hover {
+  background: #e28625;
+}
+.learn-btn-suv:hover {
+  background: #006971;
+}
+.learn-btn-luxury:hover {
+  background: #004140;
+}
