@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -6,55 +8,74 @@ body {
   margin: 0;
 }
 
-h1,
-p {
-  padding-left: 3rem;
-  margin-bottom: 1.5rem;
+@media (min-width: 58rem) {
+  .cards__container {
+    display: flex;
+  }
 }
-
-h1 {
+.cards__container h1 {
+  padding-left: 3.06rem;
+  margin-bottom: 1.56rem;
+}
+.cards__container h1 {
   margin-top: 2rem;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
 }
-
-p {
+.cards__container p {
   line-height: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  padding-right: 3rem;
+  padding-left: 3.03rem;
+  margin-top: 1.56rem;
 }
-
-button {
+.cards__container button {
   margin-left: 3rem;
 }
-
-.card__sedan,
-.card__suv,
-.card__luxury {
+.cards__container .card__sedan,
+.cards__container .card__suv,
+.cards__container .card__luxury {
   height: 27rem;
   width: 100%;
 }
-
-.card__sedan {
+.cards__container .card__sedan {
   background-color: #e28625;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-
-.card__suv {
+@media (min-width: 58rem) {
+  .cards__container .card__sedan {
+    border-bottom-left-radius: 0.5rem;
+  }
+}
+.cards__container .card__suv {
   background-color: #006971;
 }
-
-.card__luxury {
+@media (min-width: 58rem) {
+  .cards__container .card__suv {
+    border-radius: 0.5rem;
+  }
+}
+.cards__container .card__luxury {
   background-color: #004140;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-
-.card-img {
+@media (min-width: 58rem) {
+  .cards__container .card__luxury {
+    border-top-right-radius: 0.5rem;
+  }
+}
+.cards__container .card-img {
   padding-top: 3rem;
   padding-left: 3rem;
 }
-
-.learn-btn-sedan,
-.learn-btn-suv,
-.learn-btn-luxury {
+.cards__container .learn-btn-sedan,
+.cards__container .learn-btn-suv,
+.cards__container .learn-btn-luxury {
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
   border-radius: 5rem;
@@ -72,22 +93,18 @@ button {
   cursor: pointer;
   text-align: center;
 }
-
-.learn-btn-sedan {
+.cards__container .learn-btn-sedan {
   color: #e28625;
 }
-
-.learn-btn-suv {
+.cards__container .learn-btn-suv {
   color: #006971;
 }
-
-.learn-btn-luxury {
+.cards__container .learn-btn-luxury {
   color: #004140;
 }
-
-.learn-btn-sedan:hover,
-.learn-btn-suv:hover,
-.learn-btn-luxury:hover {
+.cards__container .learn-btn-sedan:hover,
+.cards__container .learn-btn-suv:hover,
+.cards__container .learn-btn-luxury:hover {
   color: #f2f2f2;
   border: solid #f2f2f2 0.06rem;
   -webkit-border-radius: 5rem;
@@ -95,16 +112,13 @@ button {
   border-radius: 5rem;
   text-decoration: none;
 }
-
-.learn-btn-sedan:hover {
+.cards__container .learn-btn-sedan:hover {
   background: #e28625;
 }
-
-.learn-btn-suv:hover {
+.cards__container .learn-btn-suv:hover {
   background: #006971;
 }
-
-.learn-btn-luxury:hover {
+.cards__container .learn-btn-luxury:hover {
   background: #004140;
 }
 
