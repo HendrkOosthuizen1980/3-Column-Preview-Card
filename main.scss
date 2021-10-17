@@ -1,34 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
+$color-head-btn: #f2f2f2;
+$color-paragraphs: hsla(0, 0%, 100%, 0.75);
+$color-sedan: #e28625;
+$color-suvs: #006971;
+$color-lux: #004140;
+
+@mixin display-flex() {
+  display: flex;
+  justify-content: center;
+}
+
 * {
   box-sizing: border-box;
 }
 html {
   @media (min-width: 90rem) {
-    display: flex;
-    justify-content: center;
+    @include display-flex();
     align-items: center;
     height: 100vh;
   }
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  @include display-flex();
 }
 
 .cards__container {
   @media (min-width: 90rem) {
-    display: flex;
-    justify-content: center;
+    @include display-flex();
   }
 
   h1 {
     padding-left: 3.06rem;
     margin-bottom: 1.56rem;
     margin-top: 2rem;
-    color: #f2f2f2;
+    color: $color-head-btn;
     font-family: 'Big Shoulders Display', cursive;
     font-size: 2.5rem;
   }
@@ -37,7 +45,7 @@ body {
     line-height: 1.5rem;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 1rem;
-    color: hsla(0, 0%, 100%, 0.75);
+    color: $color-paragraphs;
     padding-right: 3rem;
     padding-left: 3.03rem;
     margin-top: 1.56rem;
@@ -57,22 +65,23 @@ body {
   .card__sedan {
     @media (min-width: 90rem) {
       border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5;
+      border-top-right-radius: 0;
     }
-    background-color: #e28625;
+
+    background-color: $color-sedan;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
   }
   .card__suv {
-    @media (min-width: 90rem) {
-      border-radius: 0.5rem;
-    }
-    background-color: #006971;
+    background-color: $color-suvs;
   }
   .card__luxury {
     @media (min-width: 90rem) {
       border-top-right-radius: 0.5rem;
+      border-bottom-left-radius: 0;
     }
-    background-color: #004140;
+    background-color: $color-lux;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   }
@@ -93,7 +102,7 @@ body {
     font-size: 1rem;
     font-weight: 100;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: $color-head-btn;
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -101,32 +110,32 @@ body {
     text-align: center;
   }
   .learn-btn-sedan {
-    color: #e28625;
+    color: $color-sedan;
   }
   .learn-btn-suv {
-    color: #006971;
+    color: $color-suvs;
   }
   .learn-btn-luxury {
-    color: #004140;
+    color: $color-lux;
   }
 
   .learn-btn-sedan:hover,
   .learn-btn-suv:hover,
   .learn-btn-luxury:hover {
-    color: #f2f2f2;
-    border: solid #f2f2f2 0.06rem;
+    color: $color-head-btn;
+    border: solid $color-head-btn 0.06rem;
     -webkit-border-radius: 5rem;
     -moz-border-radius: 5rem;
     border-radius: 5rem;
     text-decoration: none;
   }
   .learn-btn-sedan:hover {
-    background: #e28625;
+    background: $color-sedan;
   }
   .learn-btn-suv:hover {
-    background: #006971;
+    background: $color-suvs;
   }
   .learn-btn-luxury:hover {
-    background: #004140;
+    background: $color-lux;
   }
 }

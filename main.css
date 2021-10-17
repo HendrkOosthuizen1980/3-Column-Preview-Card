@@ -58,15 +58,12 @@ body {
 @media (min-width: 90rem) {
   .cards__container .card__sedan {
     border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5;
+    border-top-right-radius: 0;
   }
 }
 .cards__container .card__suv {
   background-color: #006971;
-}
-@media (min-width: 90rem) {
-  .cards__container .card__suv {
-    border-radius: 0.5rem;
-  }
 }
 .cards__container .card__luxury {
   background-color: #004140;
@@ -76,6 +73,7 @@ body {
 @media (min-width: 90rem) {
   .cards__container .card__luxury {
     border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0;
   }
 }
 .cards__container .card-img {
