@@ -4,20 +4,29 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+@media (min-width: 90rem) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
-@media (min-width: 58rem) {
+body {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 90rem) {
   .cards__container {
     display: flex;
+    justify-content: center;
   }
 }
 .cards__container h1 {
   padding-left: 3.06rem;
   margin-bottom: 1.56rem;
-}
-.cards__container h1 {
   margin-top: 2rem;
   color: #f2f2f2;
   font-family: "Big Shoulders Display", cursive;
@@ -39,14 +48,14 @@ body {
 .cards__container .card__suv,
 .cards__container .card__luxury {
   height: 27rem;
-  width: 100%;
+  width: 20rem;
 }
 .cards__container .card__sedan {
   background-color: #e28625;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-@media (min-width: 58rem) {
+@media (min-width: 90rem) {
   .cards__container .card__sedan {
     border-bottom-left-radius: 0.5rem;
   }
@@ -54,7 +63,7 @@ body {
 .cards__container .card__suv {
   background-color: #006971;
 }
-@media (min-width: 58rem) {
+@media (min-width: 90rem) {
   .cards__container .card__suv {
     border-radius: 0.5rem;
   }
@@ -64,7 +73,7 @@ body {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-@media (min-width: 58rem) {
+@media (min-width: 90rem) {
   .cards__container .card__luxury {
     border-top-right-radius: 0.5rem;
   }
