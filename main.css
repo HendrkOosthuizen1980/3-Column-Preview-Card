@@ -19,70 +19,88 @@ body {
 }
 
 @media (min-width: 90rem) {
-  .cards__container {
+  main {
     display: flex;
     justify-content: center;
   }
 }
-.cards__container h1 {
-  padding-left: 3.06rem;
+main h1 {
+  margin-left: 3rem;
   margin-bottom: 1.56rem;
-  margin-top: 2rem;
+  margin-top: 2.18rem;
   color: #f2f2f2;
   font-family: "Big Shoulders Display", cursive;
+  font-style: normal;
   font-size: 2.5rem;
 }
-.cards__container p {
+main p {
   line-height: 1.5rem;
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1rem;
+  font-weight: normal;
+  font-size: 0.93rem;
   color: rgba(255, 255, 255, 0.75);
-  padding-right: 3rem;
-  padding-left: 3.03rem;
   margin-top: 1.56rem;
+  margin-left: 3.03rem;
+  width: 13.25rem;
+  height: 7.81rem;
 }
-.cards__container button {
+main button {
+  margin-top: 1.56rem;
   margin-left: 3rem;
 }
-.cards__container .card__sedan,
-.cards__container .card__suv,
-.cards__container .card__luxury {
-  height: 27rem;
-  width: 20rem;
+main .card__sedan,
+main .card__suv,
+main .card__luxury {
+  height: 27.65rem;
+  width: 20.45rem;
 }
-.cards__container .card__sedan {
+main .card__sedan {
   background-color: #e28625;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 @media (min-width: 90rem) {
-  .cards__container .card__sedan {
+  main .card__sedan {
     border-bottom-left-radius: 0.5rem;
     border-top-left-radius: 0.5;
     border-top-right-radius: 0;
   }
 }
-.cards__container .card__suv {
+main .card__sedan h1 {
+  width: 6.31rem;
+  height: 3rem;
+}
+main .card__suv {
   background-color: #006971;
 }
-.cards__container .card__luxury {
+main .card__suv h1 {
+  width: 4.25rem;
+  height: 3rem;
+}
+main .card__luxury {
   background-color: #004140;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 @media (min-width: 90rem) {
-  .cards__container .card__luxury {
+  main .card__luxury {
     border-top-right-radius: 0.5rem;
     border-bottom-left-radius: 0;
   }
 }
-.cards__container .card-img {
-  padding-top: 3rem;
-  padding-left: 3rem;
+main .card__luxury h1 {
+  width: 6.12rem;
+  height: 3rem;
 }
-.cards__container .learn-btn-sedan,
-.cards__container .learn-btn-suv,
-.cards__container .learn-btn-luxury {
+main .card-img {
+  width: 4rem;
+  height: 2.5rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+main .learn-btn-sedan,
+main .learn-btn-suv,
+main .learn-btn-luxury {
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
   border-radius: 5rem;
@@ -100,18 +118,18 @@ body {
   cursor: pointer;
   text-align: center;
 }
-.cards__container .learn-btn-sedan {
+main .learn-btn-sedan {
   color: #e28625;
 }
-.cards__container .learn-btn-suv {
+main .learn-btn-suv {
   color: #006971;
 }
-.cards__container .learn-btn-luxury {
+main .learn-btn-luxury {
   color: #004140;
 }
-.cards__container .learn-btn-sedan:hover,
-.cards__container .learn-btn-suv:hover,
-.cards__container .learn-btn-luxury:hover {
+main .learn-btn-sedan:hover,
+main .learn-btn-suv:hover,
+main .learn-btn-luxury:hover {
   color: #f2f2f2;
   border: solid #f2f2f2 0.06rem;
   -webkit-border-radius: 5rem;
@@ -119,13 +137,13 @@ body {
   border-radius: 5rem;
   text-decoration: none;
 }
-.cards__container .learn-btn-sedan:hover {
+main .learn-btn-sedan:hover {
   background: #e28625;
 }
-.cards__container .learn-btn-suv:hover {
+main .learn-btn-suv:hover {
   background: #006971;
 }
-.cards__container .learn-btn-luxury:hover {
+main .learn-btn-luxury:hover {
   background: #004140;
 }
 

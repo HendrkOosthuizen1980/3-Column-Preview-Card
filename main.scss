@@ -27,39 +27,43 @@ body {
   @include display-flex();
 }
 
-.cards__container {
+main {
   @media (min-width: 90rem) {
     @include display-flex();
   }
 
   h1 {
-    padding-left: 3.06rem;
+    margin-left: 3rem;
     margin-bottom: 1.56rem;
-    margin-top: 2rem;
+    margin-top: 2.18rem;
     color: $color-head-btn;
     font-family: 'Big Shoulders Display', cursive;
+    font-style: normal;
     font-size: 2.5rem;
   }
 
   p {
     line-height: 1.5rem;
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 1rem;
+    font-weight: normal;
+    font-size: 0.93rem;
     color: $color-paragraphs;
-    padding-right: 3rem;
-    padding-left: 3.03rem;
     margin-top: 1.56rem;
+    margin-left: 3.03rem;
+    width: 13.25rem;
+    height: 7.81rem;
   }
 
   button {
+    margin-top: 1.56rem;
     margin-left: 3rem;
   }
 
   .card__sedan,
   .card__suv,
   .card__luxury {
-    height: 27rem;
-    width: 20rem;
+    height: 27.65rem;
+    width: 20.45rem;
   }
 
   .card__sedan {
@@ -72,9 +76,18 @@ body {
     background-color: $color-sedan;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+    h1 {
+      width: 6.31rem;
+      height: 3rem;
+    }
   }
+
   .card__suv {
     background-color: $color-suvs;
+    h1 {
+      width: 4.25rem;
+      height: 3rem;
+    }
   }
   .card__luxury {
     @media (min-width: 90rem) {
@@ -84,10 +97,16 @@ body {
     background-color: $color-lux;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    h1 {
+      width: 6.12rem;
+      height: 3rem;
+    }
   }
   .card-img {
-    padding-top: 3rem;
-    padding-left: 3rem;
+    width: 4rem;
+    height: 2.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
   }
   .learn-btn-sedan,
   .learn-btn-suv,
