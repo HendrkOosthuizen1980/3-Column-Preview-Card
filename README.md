@@ -21,7 +21,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/HendrkOosthuizen1980/3-Column-Preview-Card
-- Live Site URL: hendrkoosthuizen1980.github.io/3-column-preview-card/
+- Live Site URL: https://hendrkoosthuizen1980.github.io/3-Column-Preview-Card
 
 ### Built with
 
